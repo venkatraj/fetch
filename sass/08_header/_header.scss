@@ -1,0 +1,96 @@
+.branding {   
+  border-bottom: 1px solid $c1; 	
+ .site-branding {
+		text-align: left;
+		position: relative;
+		margin: 5px 0px 15px;
+		.site-description {
+			@include font-size(1.4);
+			color: $c3;
+			font-family: $copy_font;
+			padding: 0px 10px 10px 0px;
+			position: relative;
+			margin-bottom:0;
+			margin-top: -12px;
+		}
+
+		.site-title {
+			margin-bottom: 0;
+			a {
+				display: block;
+        color: $secondary;
+			}
+			
+			a:hover {
+				color: $primary;
+			}
+		}	
+
+	}
+} 
+
+
+.sticky-nav {
+ 	position: fixed;
+	top: -2px;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+.admin-bar .nav-wrap.sticky-nav {
+   top: 30px;
+}
+
+.no-sidebar {
+ 	float: none;
+ 	margin: 0 auto;
+ 	display: block;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+  //background:url(images/breadcrumb.png);
+    background: -moz-linear-gradient(180deg, #3c82f4 0%, #294073 67%, #212035 99%, #212034 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #212034), color-stop(1%, #212035), color-stop(33%, #294073), color-stop(100%, #3c82f4)); /* safari4+,chrome */
+    background: -webkit-linear-gradient(180deg, #3c82f4 0%, #294073 67%, #212035 99%, #212034 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(180deg, #3c82f4 0%, #294073 67%, #212035 99%, #212034 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(180deg, #3c82f4 0%, #294073 67%, #212035 99%, #212034 100%); /* ie10+ */
+    background: linear-gradient(270deg, #3c82f4 0%, #294073 67%, #212035 99%, #212034 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212034', endColorstr='#3c82f4',GradientType=1 ); /* ie6-9 */ 
+  position: relative;
+  padding: 35px 0px 55px;
+  color: $white;
+  margin-top: 0;
+  a {
+    color: $white;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  h1 {
+    color: $white;
+    margin-bottom:0;
+    font-weight: 600;
+  }
+  .breadcrumb-text {
+    @include font-size(1.6);
+    display:inline-block;
+    color: $white;
+    text-transform:capitalize;
+  }
+   
+    #crumbs {
+    display:inline-block;
+      span {
+      	padding:0px 5px;
+      }
+    }
+
+}
+
+
+
+
+@import "top-header";

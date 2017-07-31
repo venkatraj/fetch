@@ -1,0 +1,107 @@
+.top-nav {
+	background: $c2;
+	margin-bottom: 0px;
+	line-height:40px;
+	color: $secondary;
+	aside { 
+		margin-bottom: 10px;
+		display:inline-block;
+	}  
+	.textwidget {
+		padding:0;
+	}
+	.widget_text {
+		margin:0px;    
+	}
+	a {
+		color: $secondary;
+		@include font-size(1.4);
+		&:hover {
+			color: $primary!important;
+		}
+	}
+	i,.fa {
+		padding-right:7px;
+	}
+	.cart-left {
+		a {
+			color:$secondary;
+			@include font-size(1.4);
+			i,.fa {
+				padding-right:7px;
+			}
+		}
+		font-size:15px;
+		
+	}
+	.cart-right { 
+		text-align:right;
+		@include font-size(1.4);
+		a {
+			color:$secondary;
+			font-size:15px;
+		}
+		ul {
+			li {
+				margin-right:5px;
+				a {
+					padding:0px 5px;
+					i {
+						font-size:14px;
+					}
+				}
+			}
+		}
+	}
+	ul {   
+		margin:0;
+		li {
+			list-style: none;
+			padding:0px;
+			display:inline-block;
+			border-bottom: none !important;
+			margin-right: 30px;
+			a {
+				color: $secondary;
+				display: inline;
+				font-size:13px;
+				padding:0px 10px;
+			
+			}
+			i {
+				@include font-size(1.5);	
+				padding-right: 5px;	
+				display: inline-block;
+			}
+		}
+	}
+
+}
+
+
+/*Header Right*/
+
+.header-right {
+	padding:25px 0px;
+	@include font-size(1.5);
+	line-height:1.4;
+	color: $white;
+	i,span {
+		color: $white;
+	}
+	.columns,.columns {
+		display:inline-block;
+		font-weight:700;
+		i {
+			@include font-size(3.0);
+			float:left;
+			margin-right: 10px;
+			margin-top: 4px;
+		}
+		span {
+			display:inline-block;
+			font-weight: 400;
+		}
+
+	}
+}

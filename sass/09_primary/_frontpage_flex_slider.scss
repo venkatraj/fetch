@@ -1,0 +1,166 @@
+.flexslider {
+  border: 0 !important;   
+  margin-bottom: 0; 
+  @include box-shadow(inset,0,0,0,transparent !important);
+  @include border-radius(0px !important);
+  background: transparent !important;
+  
+  .slides > li {
+    @include position(relative);
+  }
+
+  .flex-direction-nav {
+    li {
+      border: 0 !important;
+      padding: 0;
+    }
+
+    a {
+      margin: 0;
+      text-align: center;
+      top: 45%;    
+      opacity:1;
+      overflow: visible;    
+      @include size(32px, 70px);
+      @include font-size(0);
+      line-height: 70px;
+      background: transparent; 
+      border: 1px solid $white;
+      &:before {
+        @include font-size(2);
+        font-weight:700;
+        color: $white;
+        font-family: "FontAwesome";
+      }
+      &:hover {
+        background-color: $primary;
+        border-color: $primary;
+        &:before {
+          color: $white;
+        }       
+      }     
+    }
+
+    a.flex-prev {
+      left: 12px;
+      &:before {
+        content:"\f104";
+      } 
+      &:after {
+        left: 5px;
+      }    
+    }
+
+    a.flex-next {
+      text-align: center;
+      right: 15px;
+       &:before {
+        content:"\f105";
+      } 
+      &:after {
+        right: 5px;
+      } 
+    }
+
+
+  }
+
+  .flex-control-nav {
+    text-align: right;
+    bottom: 0;
+    li {
+      display: block;
+      float: left;
+      margin: 0;
+    }
+   
+  }
+
+  ol.flex-control-paging {
+    text-align: center;
+    bottom: 15px;
+    z-index: 10;
+    li {
+      float: none;
+      display: inline;
+      padding:0px;
+      a {
+        display: inline-block;
+        background-color: transparent;
+        border: 1px solid $white !important;
+        text-indent: -9999em !important;
+        margin: 0 5px;
+        box-shadow:none;
+        border-radius: 0;
+        width: 10px;
+        height: 10px;
+      }
+
+      a.flex-active,a:hover {
+        border: 1px solid $primary!important;
+        background-color: $primary;
+      }
+
+    }
+  }
+
+  &:hover {
+    .flex-direction-nav {
+
+      a.flex-prev {
+        opacity:1;
+      }
+
+      a.flex-next {
+         opacity:1;
+      }
+
+    }
+  }
+}
+
+
+
+.flexslider {
+  .flex-caption {  
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      color: $white;
+      width: 55%;
+      padding:30px 50px 20px 40px;
+      text-align: left;
+      margin:0 auto;
+      background:rgba($sec,0.75);
+        h1,h2,h4,h5,h6 {
+          color: $white;
+          position: relative;
+          line-height:normal;
+          border-bottom: 1px solid rgba($white,0.7);
+        }
+
+        p {
+          @include font-size(1.6);
+        }
+
+    p a {
+          color: $secondary;
+          padding: 10px 25px 10px 25px; 
+          //margin: 10px;
+          font-weight: 700;
+          display: inline-block;
+          border-radius:2px;
+          text-align: center;
+          background: $white;
+          
+          &:hover {
+             background-color: $primary;
+             color: $white; 
+             &:after {
+                color:$secondary;
+             }
+          }
+      }
+
+  }
+}
