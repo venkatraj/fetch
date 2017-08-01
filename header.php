@@ -43,9 +43,12 @@ if ( is_singular() && pings_open() ) { ?>
 			 
 			<div class="branding header-image">
 				<div class="container">
-					<div class="five columns">
-						<div class="site-branding">
-							<?php 
+				<?php if( is_front_page() ): ?>
+					 <div class="seven columns">
+					<?php else: ?>	
+                      <div class="five columns">
+					<?php endif; ?>
+						<div class="site-branding"><?php 
 								$logo_title = get_theme_mod( 'logo_title' );   
 								$tagline = get_theme_mod( 'tagline',true);
 								if( $logo_title && function_exists( 'the_custom_logo' ) ) :
@@ -59,7 +62,7 @@ if ( is_singular() && pings_open() ) { ?>
 						</div><!-- .site-branding -->
 					</div>   
 					<?php if( is_front_page() ): ?>
-						<div class="eleven columns">
+						<div class="nine columns">
 							<div class="header-right clearfix">
 								<?php dynamic_sidebar('header-right' ); ?>  
 							</div>

@@ -130,7 +130,7 @@ function fetch_setup() {
 		        	'text' , 
 		        	// Widget $instance -> settings 
 					array (
-					  'text'  => __('<div class="five columns"><i class="fa fa-phone"></i><span>Call Us:</span>1254-256-212-54</div><div class="six columns right"><i class="fa fa-envelope"></i><span>Email Us:</span>information@companyname.com</div><div class="five columns"><i class="fa fa-clock-o"></i><span>Opening Time:</span>Mon-Sat: 8.00am-6.00pm</div>','fetch'),
+					  'text'  => __('<div class="five columns"><i class="fa fa-phone"></i><span>Call Us:</span><br>1254-256-212-54</div><div class="five columns right"><i class="fa fa-envelope"></i><span>Email Us:</span><br> info@cpyname.com</div><div class="six columns"><i class="fa fa-clock-o"></i><span>Opening Time:</span><br>Mon-Sat: 8.00am-6.00pm</div>','fetch'),
 					)
 				),
 			),

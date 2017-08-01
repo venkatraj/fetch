@@ -166,7 +166,7 @@ function fetch_display_upgrade() {
     $current_action_link =  admin_url( 'themes.php?page=fetch_upgrade&tab=pro_features' ); ?>
     <div class="fetch-wrapper about-wrap">
         <h1><?php printf(esc_html__('Welcome to %1$s - Version %2$s', 'fetch'), $theme_data->Name ,$theme_data->Version ); ?></h1><?php
-       	printf( __('<div class="about-text"> Fetch is a constrcution based theme. It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility. There is no theme options panel, instead uses Customizer, core feature of WordPress and comes with lots of options to customize. Some of the available options are awesome slider section, header options, footer options, layout design options, widget options and lots of other available options will allow you to create unique website as you want.</div>', 'fetch') ); ?>
+       	printf( __('<div class="about-text">'.$theme_data->Description.'</div>', 'fetch') ); ?>
         <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
         <p class="upgrade-btn"><a class="upgrade" href="<?php echo esc_url($pro_theme_url); ?>" target="_blank"><?php printf( __( 'Buy %1s Pro - $39', 'fetch'), $theme_data->Name ); ?></a></p>
 

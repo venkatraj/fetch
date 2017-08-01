@@ -117,24 +117,24 @@
         color: $white;
       }
       select {
-         background: transparent url("../images/select-down.png") no-repeat scroll 95% 50%;
+         background: transparent url("images/select-down.png") no-repeat scroll 95% 50%;
          width: 100%;
          padding: 8px 10% 8px 3%;
          color: $white;
          border-color: $white;
       }  
       option {
-        color: $c3;  
+        color: $secondary;  
       }
       input::placeholder {
         color: $white;
         opacity:1;
-      }
+      }  
       input[type="submit"] {
          width: 100%;
          background-color: $white;
          color: $secondary;
-         margin-top: 15px;
+         margin-top: 15px;  
          font-weight: 500;
          &:hover {
           background-color: $secondary;
@@ -147,6 +147,9 @@
         margin: 12px 8px;
       }
 
+  }
+  .aboutus-img {
+    text-align:right;
   }
 
 }

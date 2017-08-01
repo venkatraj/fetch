@@ -2,12 +2,12 @@
 	background: $primary;
 	.copyright {
 		padding: 10px 0px;
-		color:$secondary;
-		text-align:center;
+		color: $white;
+		text-align: center;
 		p {
 			margin-bottom:0px;
 			a {
-				color:$white;
+				color: rgba($white,0.9);
 				&:hover {
 					color:$secondary;
 				}

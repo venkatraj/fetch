@@ -3,13 +3,13 @@ Theme Name: Fetch
 Theme URI: http://www.webulousthemes.com/fetch/
 Author: N. Venkat Raj  
 Author URI: http://www.webulousthemes.com/
-Description: Fetch is a WordPress business theme. It is focused on building websites in the Fetch, Fetchation, Logistic company niches. It can be used for any kind of Fetch or manufacturing type business. However, due to its flexibility and easiness it can be used to create any types of sites.  It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility. Some of the available options are awesome slider section, header options, footer options, layout design options, widget options and lots of other available options will allow you to create unique website as you want. 
+Description: Fetch is a WordPress business theme. It is focused on building websites in the Trasnport, Trasnportation, Logistic company niches. It can be used for any kind of Trasnport or manufacturing type business. However, due to its flexibility and easiness it can be used to create any types of sites.  It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility. Some of the available options are awesome slider section, header options, footer options, layout design options, widget options and lots of other available options will allow you to create unique website as you want. 
 Version: 1.0.0
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: fetch
 Tags: blog, news, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, translation-ready, theme-options, rtl-language-support
-
+ 
 Fetch WordPress Theme, Copyright (C) 2017, N. Venkat Raj
 Fetch is distributed under the terms of the GNU GPL
 
@@ -464,7 +464,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Kanit", sans-serif;
   color: #191b30;
   clear: both;
-  font-weight: 500;
+  font-weight: 600;
   margin-bottom: 15px; }
 
 h1 {
@@ -890,7 +890,8 @@ a {
     .main-navigation li:hover ul {
       margin-top: 0px;
       border: 2px solid #191b30;
-      border-radius: 5px; }
+      border-radius: 12px 12px 5px 5px;
+      border-top: 5px solid transparent; }
   .main-navigation a {
     display: block;
     text-decoration: none;
@@ -1992,13 +1993,13 @@ blockquote, q {
       border-color: #fff;
       color: #fff; }
     .content-section-wrapper #aboutus-form select {
-      background: transparent url("../images/select-down.png") no-repeat scroll 95% 50%;
+      background: transparent url("images/select-down.png") no-repeat scroll 95% 50%;
       width: 100%;
       padding: 8px 10% 8px 3%;
       color: #fff;
       border-color: #fff; }
     .content-section-wrapper #aboutus-form option {
-      color: #808080; }
+      color: #191b30; }
     .content-section-wrapper #aboutus-form input::-webkit-input-placeholder {
       color: #fff;
       opacity: 1; }
@@ -2021,6 +2022,8 @@ blockquote, q {
       float: left;
       width: calc(50% - 16px);
       margin: 12px 8px; }
+  .content-section-wrapper .aboutus-img {
+    text-align: right; }
 
 /* Recent Post section */
 .post-wrapper {
@@ -2189,10 +2192,12 @@ blockquote, q {
     color: #fff;
     position: relative;
     line-height: normal;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.7); }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px; }
   .flexslider .flex-caption p {
     font-size: 16px;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    margin-bottom: 30px; }
   .flexslider .flex-caption p a {
     color: #191b30;
     padding: 10px 25px 10px 25px;
@@ -3080,12 +3085,12 @@ blockquote, q {
   background: #3c82f4; }
   .site-info .copyright {
     padding: 10px 0px;
-    color: #191b30;
+    color: #fff;
     text-align: center; }
     .site-info .copyright p {
       margin-bottom: 0px; }
       .site-info .copyright p a {
-        color: #fff; }
+        color: rgba(255, 255, 255, 0.9); }
         .site-info .copyright p a:hover {
           color: #191b30; }
 

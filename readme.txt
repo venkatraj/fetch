@@ -15,7 +15,7 @@ Fetch is distributed under the terms of the GNU GPL
 Fetch WordPress Theme is derived from Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 
 == Description == 
-Fetch is a WordPress business theme. It is focused on building websites in the Fetch, Fetchation, Logistic company niches. It can be used for any kind of Fetch or manufacturing type business. However, due to its flexibility and easiness it can be used to create any types of sites.  It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility. Some of the available options are awesome slider section, header options, footer options, layout design options, widget options and lots of other available options will allow you to create unique website as you want.  
+Fetch is a WordPress business theme. It is focused on building websites in the Trasnport, Trasnportation, Logistic company niches. It can be used for any kind of Trasnport or manufacturing type business. However, due to its flexibility and easiness it can be used to create any types of sites.  It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility. Some of the available options are awesome slider section, header options, footer options, layout design options, widget options and lots of other available options will allow you to create unique website as you want. 
 
 == Frequently Asked Questions == 
 = Installation =
@@ -32,7 +32,7 @@ Fetch is a WordPress business theme. It is focused on building websites in the F
 5. Click on 'Home Options' panel
 6. Select a category for 'Slider Posts Category'.
 7. Enter no. of slides to show from above selected category.
-8. Select Service section #1,#2,#3,#4 and icons.
+8. Select Service section title and service section #1,#2,#3,#4 and icons.
 9. Select the Abous us title & image.
 10.Enable the Recent Post section and save it.
 11. Enable home page content if you want
