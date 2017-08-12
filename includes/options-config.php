@@ -166,7 +166,7 @@ function fetch_display_upgrade() {
     $current_action_link =  admin_url( 'themes.php?page=fetch_upgrade&tab=pro_features' ); ?>
     <div class="fetch-wrapper about-wrap">
         <h1><?php printf(esc_html__('Welcome to %1$s - Version %2$s', 'fetch'), $theme_data->Name ,$theme_data->Version ); ?></h1><?php
-       	printf( __('<div class="about-text">'.$theme_data->Description.'</div>', 'fetch') ); ?>
+       	printf( __('<div class="about-text">Fetch is a WordPress business theme. It is focused on building websites in the Transport, Transportation, Logistic company niches. It can be used for any kind of Transport or manufacturing type business. However, due to its flexibility and easiness it can be used to create any types of sites.  It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility.</div>', 'fetch') ); ?>
         <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
         <p class="upgrade-btn"><a class="upgrade" href="<?php echo esc_url($pro_theme_url); ?>" target="_blank"><?php printf( __( 'Buy %1s Pro - $39', 'fetch'), $theme_data->Name ); ?></a></p>
 

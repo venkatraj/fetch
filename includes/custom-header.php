@@ -31,7 +31,8 @@ function fetch_custom_header_setup() {
 		'width'                  => 1920,
 		'height'                 => 400,
 		'flex-height'            => true, 
-		'wp-head-callback'       => 'fetch_header_style'
+		'video'                  => true,
+		'wp-head-callback'       => 'fetch_header_style',
 	) ) );
 }
 

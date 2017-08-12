@@ -24,6 +24,9 @@
 		    		color: $secondary;
 		    	}
 		    }
+		    .site-description {
+		    	color: $white;
+		    }
 	    }
    }
    .header-right {
@@ -237,9 +240,24 @@
 			 }
 		}
 	}
+	.main-navigation ul ul.sub-menu a, .main-navigation ul ul.children a {
+		background-color: transparent;
+	}
+	.main-navigation li:hover ul {
+		border: none;
+	}
+	.main-navigation ul {
+		float: none;
+	}
 
 	.main-navigation  ul.nav-menu {
 		display: none;
+	}
+	.menu-toggle, .main-navigation.toggled ul.nav-menu {
+		//width: 100%;
+	}
+	.menu-toggle li, .main-navigation.toggled ul.nav-menu li {
+		text-align: left;
 	}
 }
 

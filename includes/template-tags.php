@@ -587,7 +587,7 @@ if( ! function_exists ( 'fetch_add_aboutus_section' ) ) {
 		$aboutus_section_title = intval(get_theme_mod('aboutus_section_title'));
 		$aboutus_section_status = get_theme_mod('aboutus_section_status',true);
 
-		if ($aboutus_section_status) { ?>
+		if ($aboutus_section_status && ( $aboutus_section_title || ( $aboutus_section_form && class_exists( 'WPCF7' ) ) ) ) { ?>
 			<div class="content-section-wrapper">
 				<div class="container">
 					<main id="main" class="site-main clearfix" role="main">

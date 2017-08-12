@@ -732,6 +732,8 @@ a {
       color: #fff; }
       .header-full-nav .branding .site-branding .site-title a:hover {
         color: #191b30; }
+    .header-full-nav .branding .site-branding .site-description {
+      color: #fff; }
 
 .header-full-nav .header-right {
   color: #fff; }
@@ -880,8 +882,16 @@ a {
         .menu-toggle ul li a,
         .main-navigation.toggled ul.nav-menu ul li a {
           color: #191b30; }
+  .main-navigation ul ul.sub-menu a, .main-navigation ul ul.children a {
+    background-color: transparent; }
+  .main-navigation li:hover ul {
+    border: none; }
+  .main-navigation ul {
+    float: none; }
   .main-navigation ul.nav-menu {
-    display: none; } }
+    display: none; }
+  .menu-toggle li, .main-navigation.toggled ul.nav-menu li {
+    text-align: right; } }
 
 .comment-navigation,
 .paging-navigation,
@@ -3027,7 +3037,13 @@ blockquote, q {
 
 @media only screen and (max-width: 850px) {
   .widget_nav_menu ul.sub-menu li {
-    padding-right: 15px !important; } }
+    padding-right: 15px !important; }
+  .header-right {
+    font-size: 14px;
+    font-size: 1.4rem; }
+    .header-right .columns i {
+      font-size: 14px;
+      font-size: 1.4rem; } }
 
 @media only screen and (min-width: 961px) and (max-width: 1200px) {
   .top-nav .one.columns {
@@ -3039,13 +3055,29 @@ blockquote, q {
     width: 85%; } }
 
 @media only screen and (max-width: 768px) {
+  .header-right {
+    font-size: 14px;
+    font-size: 1.4rem;
+    padding-top: 0; }
+    .header-right .columns i {
+      font-size: 14px;
+      font-size: 1.4rem;
+      float: none; }
+    .header-right div {
+      margin-bottom: 10px; }
   .breadcrumb-left, .breadcrumb-right {
     text-align: center !important; }
-  .breadcrumb .container .eight.columns, .branding .container .eight.columns {
-    width: 100%;
+  .breadcrumb, .branding {
     text-align: center; }
-  .breadcrumb .site-title, .breadcrumb .site-description, .branding .site-title, .branding .site-description {
+    .breadcrumb .container .eight.columns, .branding .container .eight.columns {
+      width: 100%;
+      text-align: center; }
+    .breadcrumb .site-title, .breadcrumb .site-description, .branding .site-title, .branding .site-description {
+      text-align: center; }
+  .top-nav .cart-left, .top-nav .cart-right {
     text-align: center; }
+  .post-wrapper .latest-posts .latest-post-thumb img {
+    width: 100%; }
   .post-wrapper .latest-post {
     padding: 0px;
     margin-bottom: 50px !important; }

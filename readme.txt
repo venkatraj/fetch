@@ -13,7 +13,7 @@ Fetch WordPress Theme, Copyright (C) 2017, V. Uma Rani
 Fetch is distributed under the terms of the GNU GPL
 
 Fetch WordPress Theme is derived from Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-
+ 
 == Description == 
 Fetch is a WordPress business theme. It is focused on building websites in the Trasnport, Trasnportation, Logistic company niches. It can be used for any kind of Trasnport or manufacturing type business. However, due to its flexibility and easiness it can be used to create any types of sites.  It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility. Some of the available options are awesome slider section, header options, footer options, layout design options, widget options and lots of other available options will allow you to create unique website as you want. 
 
