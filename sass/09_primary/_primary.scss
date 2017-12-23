@@ -1,8 +1,12 @@
-.site-content {
+.site-content ,.home .site-content.default{
 	padding-top: 50px;
 	margin-bottom: 100px;
 }
 
+.home .site-content {
+	padding-top:0px;
+	margin-bottom:0px;
+}
 
 .site-main {
 	margin: 1.5em 0;
