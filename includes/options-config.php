@@ -159,15 +159,15 @@ function fetch_display_upgrade() {
         $tab = null;
     } 
      
-    $pro_theme_url = 'https://webulousthemes.com/theme/fetch-pro/';
+    $pro_theme_url = 'https://www.webulousthemes.com/theme/fetch-pro/';
     $doc_url  = 'https://www.webulousthemes.com/fetch-free';
-    $support_url = 'https://webulousthemes.com/free-support-request/';   
+    $support_url = 'https://www.webulousthemes.com/free-support-request/';   
     
     $current_action_link =  admin_url( 'themes.php?page=fetch_upgrade&tab=pro_features' ); ?>
     <div class="fetch-wrapper about-wrap">
         <h1><?php printf(esc_html__('Welcome to %1$s - Version %2$s', 'fetch'), $theme_data->Name ,$theme_data->Version ); ?></h1><?php
        	printf( __('<div class="about-text">Fetch is a WordPress business theme. It is focused on building websites in the Transport, Transportation, Logistic company niches. It can be used for any kind of Transport or manufacturing type business. However, due to its flexibility and easiness it can be used to create any types of sites.  It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility.</div>', 'fetch') ); ?>
-        <a href="https://webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
+        <a href="https://www.webulousthemes.com/" target="_blank" class="wp-badge welcome-logo"></a>   
         <p class="upgrade-btn"><a class="upgrade" href="<?php echo esc_url($pro_theme_url); ?>" target="_blank"><?php printf( __( 'Buy %1s Pro - $39', 'fetch'), $theme_data->Name ); ?></a></p>
 
 	   <h2 class="nav-tab-wrapper">
@@ -213,13 +213,19 @@ function fetch_display_upgrade() {
             </div>
         <?php } ?>
 
-         <?php if ( $tab == 'one_click_demo' ) { ?>
+        <?php if ( $tab == 'one_click_demo' ) { ?>
             <div class="one-click-demo-tab info-tab-content">
-				<div class="wrap clearfix"><?php
-				    _e('Install required & recommended plugins.','fetch');
-				    include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
-				    if ( is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' ) ) {							
-                      printf( __('<a href="%1$s">Click here to install the demo</a>','fetch'), admin_url('themes.php?page=pt-one-click-demo-import') ); 
+				<div class="wrap clearfix">
+					<?php
+					if( ! function_exists('is_plugin_activate') ) {
+						include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+					}
+					if ( fetch_is_plugin_installed('One Click Demo Import') != 1 ) {
+						echo sprintf('%1$s <a href="%2$s"> %3$s</a>', __('Install required plugin to import the demo content.','fetch'), admin_url('themes.php?page=tgmpa-install-plugins&plugin_status=install'), __('Begin Installing Plugin','fetch') );
+					} elseif ( is_plugin_active( 'one-click-demo-import/one-click-demo-import.php' ) ) {	
+						echo sprintf('<a href="%1$s"> %2$s</a>',  admin_url('themes.php?page=pt-one-click-demo-import'), __('Click here to install the demo','fetch') );
+				    } else {
+				    	echo sprintf('%1$s <a href="%2$s"> %3$s</a>', __('Kindly activate the Required plugin to Import the demo content.','fetch'), admin_url('themes.php?page=tgmpa-install-plugins&plugin_status=activate'), __('Begin Activating Plugin','fetch') );
 				    } ?>
 				</div>
 			</div><?php   
@@ -392,24 +398,6 @@ function fetch_display_upgrade() {
                                 'default' => 'right',  
                                 'sanitize_callback' => 'sanitize_text_field', 
                             ),
-						),
-					),
-					'header' => array(
-						'title' => __('Header', 'fetch'),
-						'description' => __('Header options', 'fetch'),
-						'fields' => array(
-							'logo_title' => array(
-								'type' => 'checkbox',
-								'label' => __('Logo as Title', 'fetch'),
-								'default' => 0,
-								'sanitize_callback' => 'fetch_boolean',
-							),
-							'tagline' => array(
-								'type' => 'checkbox',
-								'label' => __('Show site Tagline', 'fetch'),
-								'default' => 1,
-								'sanitize_callback' => 'fetch_boolean',
-							),
 						),
 					),
 					'footer' => array(

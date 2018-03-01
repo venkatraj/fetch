@@ -103,10 +103,10 @@ function fetch_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => sprintf('<ul><li><i class="fa fa-phone"></i>(012)1234 5678</li><li><i class="fa fa-clock-o"></i>%1$s</li><li><i class="fa fa-envelope"></i>%2$s</li</ul>',__('Mon - Sat:09.00-18.00','fetch'),__('example.com','fetch') )
+					  'content'  => sprintf('<ul><li><i class="fa fa-phone"></i>(012)1234 5678</li><li><i class="fa fa-clock-o"></i>%1$s</li><li><i class="fa fa-envelope"></i>%2$s</li</ul>',__('Mon - Sat:09.00-18.00','fetch'),__('example.com','fetch') )
 					) 
 				)
 			),
@@ -116,10 +116,10 @@ function fetch_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array (
-					  'text'  => '<ul><li><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-skype"></i></a><a href="#"><i class="fa fa-envelope"></i></a><a href="#"><i class="fa fa-google"></i></a></li></ul>'
+					  'content'  => '<ul><li><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-skype"></i></a><a href="#"><i class="fa fa-envelope"></i></a><a href="#"><i class="fa fa-google"></i></a></li></ul>'
 					)
 				),
 			),
@@ -128,10 +128,10 @@ function fetch_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array (
-					  'text'  => sprintf('<div class="five columns"><i class="fa fa-phone"></i><span>%1$s</span><br>1254-256-212-54</div><div class="five columns right"><i class="fa fa-envelope"></i><span>%2$s</span><br> %3$s</div><div class="six columns"><i class="fa fa-clock-o"></i><span>%4$s</span><br>%5$s</div>',__('Call Us:','fetch'),__('Email Us:','fetch'),__('example.com','fetch'),__('Opening Time:','fecth'),__('Mon-Sat: 8.00am-6.00pm','fetch') ),
+					  'content'  => sprintf('<div class="five columns"><i class="fa fa-phone"></i><span>%1$s</span><br>1254-256-212-54</div><div class="five columns right"><i class="fa fa-envelope"></i><span>%2$s</span><br> %3$s</div><div class="six columns"><i class="fa fa-clock-o"></i><span>%4$s</span><br>%5$s</div>',__('Call Us:','fetch'),__('Email Us:','fetch'),__('example.com','fetch'),__('Opening Time:','fetch'),__('Mon-Sat: 8.00am-6.00pm','fetch') ),
 					)
 				),
 			),
@@ -140,10 +140,10 @@ function fetch_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text'  => __('<h4 class="widget-title">Fetch</h4>Structure personal participate in ethics training as part of our best practices program and each employee is provided with a skillset that help them makes the best decisions.','fetch'),
+					  'content'  => __('<h4 class="widget-title">Fetch</h4>Structure personal participate in ethics training as part of our best practices program and each employee is provided with a skillset that help them makes the best decisions.','fetch'),
 					)
 				)
 			),
@@ -155,10 +155,10 @@ function fetch_setup() {
 				// Widget ID
 			    'my_text' => array(
 					// Widget $id -> set when creating a Widget Class
-		        	'text' , 
+		        	'custom_html' , 
 		        	// Widget $instance -> settings 
 					array(
-					  'text' => sprintf('<h4 class="widget-title">%1$s</h4><ul><li>%2$s</li><li>(102) 6666 8888</li><li>%3$s</li><li>(102) 8888 9999</li><li>%4$s</li></ul>',__('Contact Details','fetch'),__('14 Tottenham Court Road, London, English','fetch'),__('example.com','fetch'),__('Mon - Sat: 9:00 - 18:00','fetch'))	
+					  'content' => sprintf('<h4 class="widget-title">%1$s</h4><ul><li>%2$s</li><li>(102) 6666 8888</li><li>%3$s</li><li>(102) 8888 9999</li><li>%4$s</li></ul>',__('Contact Details','fetch'),__('14 Tottenham Court Road, London, English','fetch'),__('example.com','fetch'),__('Mon - Sat: 9:00 - 18:00','fetch'))	
 					)
 				)
 			),
@@ -276,7 +276,7 @@ function fetch_setup() {
 			'service_section_icon_3' => 'fa-apple',
 			'service_section_icon_4' => 'fa-anchor',
 			'aboutus_section_title' => '{{aboutus_section_title}}',
-			'aboutus_section_img' => '{{image-section-2}}',
+			'aboutus_section_img' => '{{aboutus_section_img}}',
 			'service_section_title' => '{{service-section-title}}',
 			'recent_post_section_title' => '{{recent-post-section-title}}'
 			
@@ -460,6 +460,26 @@ if ( ! function_exists( 'fetch_after_import' ) ) {
 	}
 }
 
+/* Check whether the One Click Import Plugin is installed or not */
+
+function fetch_is_plugin_installed($plugin_title)
+{
+    // get all the plugins
+    $installed_plugins = get_plugins();
+
+    foreach ($installed_plugins as $installed_plugin => $data) {
+
+        // check for the plugin title
+        if ($data['Title'] == $plugin_title) {
+
+            // return the plugin folder/file
+            return true;
+        }
+    }
+
+    return false;
+}
+
 /* Recommended plugin using TGM */
 add_action( 'tgmpa_register', 'fetch_register_plugins');
 if( !function_exists('fetch_register_plugins') ) {
@@ -516,3 +536,7 @@ if( !function_exists('fetch_register_plugins') ) {
 		tgmpa( $plugins, $config );
 	}
 }
+
+/* To Hide Branding message in One Click demo import*/
+
+add_filter( 'pt-ocdi/disable_pt_branding', '__return_true' );

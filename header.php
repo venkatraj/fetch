@@ -49,14 +49,11 @@ if ( is_singular() && pings_open() ) { ?>
                       <div class="five columns">
 					<?php endif; ?>
 						<div class="site-branding"><?php 
-								$logo_title = get_theme_mod( 'logo_title' );   
-								$tagline = get_theme_mod( 'tagline',true);
-								if( $logo_title && function_exists( 'the_custom_logo' ) ) :
-	                                the_custom_logo();     
-	                            else : ?>
-									<h1 class="site-title"><a style="color: #<?php header_textcolor(); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-							<?php endif; ?>
-							<?php if( $tagline ) : ?>
+						
+	                            the_custom_logo();  ?>
+								<h1 class="site-title"><a style="color: #<?php header_textcolor(); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+							<?php  $description = get_bloginfo( 'description', 'display' ); 
+							if ( $description || is_customize_preview() ) : ?>
 									<p class="site-description" style="color: #<?php header_textcolor(); ?>"><?php bloginfo( 'description' ); ?></p>
 							<?php endif; ?>
 						</div><!-- .site-branding -->

@@ -47,6 +47,7 @@ if ( ! function_exists( 'fetch_header_style' ) ) :
  * @see fetch_custom_header_setup().  
  */
 function fetch_header_style() {
+	$header_text_color = get_header_textcolor();
 	if ( get_header_image() ) {
 	?>
 	<style type="text/css">    
@@ -60,6 +61,16 @@ function fetch_header_style() {
 	</style>
 	<?php
 	}
+	if ( 'blank' === $header_text_color ) {
+	?>
+		<style type="text/css">
+			.site-title,
+			.branding .site-branding .site-description {
+				position: absolute;
+				clip: rect(1px, 1px, 1px, 1px);
+			}
+		</style> 
+	<?php }
    /* Header Video Settings */
     if(function_exists('is_header_video_active') ) {
 		if ( is_header_video_active() ) { ?>
@@ -75,11 +86,11 @@ function fetch_header_style() {
 				.wp-custom-header iframe,
 				.wp-custom-header video {
 				      display: block;
-				      //height: auto;
 				      max-width: 100%;
-				      height: 100vh;
+				      height: auto;
 				      width: 100vw;
 				      overflow: hidden;
+				      object-fit: cover;
 				}
 
 		    </style><?php
