@@ -21,7 +21,8 @@ if ( is_singular() && pings_open() ) { ?>
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'fetch' ); ?></a>
 	
-	<?php $header_type = is_front_page() ? 'header-full-nav' : ''; ?>
+	<?php $header_style = get_theme_mod('header_style','style_one'); 
+	$header_type = (is_front_page() || $header_style == 'style_two') ? 'header-full-nav' : ''; ?>
 	<header id="masthead" class="site-header <?php echo $header_type; ?>" role="banner">   
 			<?php if( is_active_sidebar( 'top-left' )  || is_active_sidebar( 'top-right' ) ): ?>
 				<div class="top-nav">
@@ -43,7 +44,7 @@ if ( is_singular() && pings_open() ) { ?>
 			 <?php do_action('fetch_before_header'); ?>
 			<div class="branding header-image">
 				<div class="container">
-				<?php if( is_front_page() ): ?>
+				<?php if( is_front_page() || ($header_style == 'style_two') ): ?>
 					 <div class="seven columns">
 					<?php else: ?>	
                       <div class="five columns">
@@ -58,7 +59,7 @@ if ( is_singular() && pings_open() ) { ?>
 							<?php endif; ?>
 						</div><!-- .site-branding -->
 					</div>   
-					<?php if( is_front_page() ): ?>
+					<?php if( is_front_page() || ($header_style == 'style_two') ): ?>
 						<div class="nine columns">
 							<div class="header-right clearfix">
 								<?php dynamic_sidebar('header-right' ); ?>  
@@ -72,7 +73,7 @@ if ( is_singular() && pings_open() ) { ?>
 					<?php endif; ?>	
 				</div>
 			</div>   
-			<?php if( is_front_page() ): ?>
+			<?php if( is_front_page() || ($header_style == 'style_two') ): ?>
 				<div class="header-menu-wrapper clearfix">
 					<div class="container">
 						<div class="nav-wrap clearfix">

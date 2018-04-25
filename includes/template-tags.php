@@ -106,13 +106,15 @@ if( ! function_exists('fetch_recent_posts') ) {
 	function fetch_recent_posts() {       
 		$output = '';
 		$posts_per_page  = get_theme_mod('recent_posts_count', 6 );
+		$post_ID  = explode (',',get_theme_mod('recent_posts_exclude'));
 		// WP_Query arguments
 		$args = array (
 			'post_type'              => 'post',
 			'post_status'            => 'publish',   
 			'posts_per_page'         => intval($posts_per_page),
 			'ignore_sticky_posts'    => true,
-			'order'                  => 'DESC',
+			'order'                  => 'DESC', 
+			'post__not_in'           => $post_ID,
 		);
 
 		// The Query
@@ -569,7 +571,7 @@ if( ! function_exists ( 'fetch_add_service_section' ) ) {
 									    	        endif; ?>
 										    	
 											    	<div class="service-content">
-											    	    <?php the_title( sprintf( '<h4><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
+											    	    <?php the_title( sprintf( '<h4><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),  '</a></h4>' ); ?>
 												    	<?php the_content(); ?>
 											    	</div>
 										    </div>

@@ -1,4 +1,4 @@
-# Copyright (C) 2017 Fetch
+# Copyright (C) 2018 Fetch
 # This file is distributed under the same license as the Fetch package.
 msgid ""
 msgstr ""
@@ -84,11 +84,11 @@ msgstr ""
 msgid "Theme: Fetch by <a href=\"%1$s\" target=\"_blank\" rel=\"designer\">Webulous Themes</a></p>"
 msgstr ""
 
-#: front-page.php:37, template-parts/content-search.php:42, template-parts/content-single.php:40, template-parts/content.php:41
+#: front-page.php:39, template-parts/content-search.php:42, template-parts/content-single.php:40, template-parts/content.php:41
 msgid "Read More"
 msgstr ""
 
-#: front-page.php:39, template-parts/content-search.php:47, template-parts/content-single.php:45, template-parts/content.php:46
+#: front-page.php:41, template-parts/content-search.php:47, template-parts/content-single.php:45, template-parts/content.php:46
 msgid "Pages: "
 msgstr ""
 
@@ -110,6 +110,10 @@ msgstr ""
 
 #: functions.php:134
 msgid "Email Us:"
+msgstr ""
+
+#: functions.php:134
+msgid "Opening Time:"
 msgstr ""
 
 #: functions.php:134
@@ -636,11 +640,11 @@ msgstr ""
 msgid "Choose Post"
 msgstr ""
 
-#: includes/custom-header.php:97
+#: includes/custom-header.php:108
 msgid "Play background video"
 msgstr ""
 
-#: includes/custom-header.php:98
+#: includes/custom-header.php:109
 msgid "Pause background video"
 msgstr ""
 
@@ -665,7 +669,7 @@ msgstr ""
 msgid "Theme offers many different page layouts so you can quickly and easily create your pages with no hassle!"
 msgstr ""
 
-#: includes/options-config.php:6, includes/options-config.php:326
+#: includes/options-config.php:6, includes/options-config.php:342
 msgid "Unlimited Sidebar"
 msgstr ""
 
@@ -761,7 +765,7 @@ msgstr ""
 msgid "Want your users to stay in touch? No problem, Theme has Social Media icons all throughout the theme!"
 msgstr ""
 
-#: includes/options-config.php:30, includes/options-config.php:296
+#: includes/options-config.php:30, includes/options-config.php:312
 msgid "Google Map"
 msgstr ""
 
@@ -817,7 +821,7 @@ msgstr ""
 msgid "<div class=\"about-text\">Fetch is a WordPress business theme. It is focused on building websites in the Transport, Transportation, Logistic company niches. It can be used for any kind of Transport or manufacturing type business. However, due to its flexibility and easiness it can be used to create any types of sites.  It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility.</div>"
 msgstr ""
 
-#: includes/options-config.php:171, includes/options-config.php:333
+#: includes/options-config.php:171, includes/options-config.php:349
 msgid "Buy %1s Pro - $39"
 msgstr ""
 
@@ -833,367 +837,415 @@ msgstr ""
 msgid "Free VS PRO"
 msgstr ""
 
-#: includes/options-config.php:186
-msgid "Theme Customizer"
+#: includes/options-config.php:187
+msgid "New to Creating a Website?"
 msgstr ""
 
 #: includes/options-config.php:187
-msgid "%s supports the Theme Customizer for all theme settings. Click \"Customize\" to start customize your site."
+msgid "We will build you a complete website based on the theme you selected. We will populate content, change colors and do any look and feel customisation work you prefer."
 msgstr ""
 
-#: includes/options-config.php:189
-msgid "Start Customize"
-msgstr ""
-
-#: includes/options-config.php:193
-msgid "Theme Documentation"
-msgstr ""
-
-#: includes/options-config.php:194
-msgid "Need any help to setup and configure %s? Please have a look at our documentations instructions."
+#: includes/options-config.php:190
+msgid "Image"
 msgstr ""
 
 #: includes/options-config.php:196
+msgid "Theme Customizer"
+msgstr ""
+
+#: includes/options-config.php:197
+msgid "%s supports the Theme Customizer for all theme settings. Click \"Customize\" to start customize your site."
+msgstr ""
+
+#: includes/options-config.php:199
+msgid "Start Customize"
+msgstr ""
+
+#: includes/options-config.php:203
+msgid "Theme Documentation"
+msgstr ""
+
+#: includes/options-config.php:204
+msgid "Need any help to setup and configure %s? Please have a look at our documentations instructions."
+msgstr ""
+
+#: includes/options-config.php:206
 msgid " Documentation"
 msgstr ""
 
-#: includes/options-config.php:201
+#: includes/options-config.php:211
 msgid "Having Trouble, Need Support?"
 msgstr ""
 
-#: includes/options-config.php:202
+#: includes/options-config.php:212
 msgid "Support for %s WordPress theme is conducted through Webulous free support ticket system."
 msgstr ""
 
-#: includes/options-config.php:219
-msgid "Install required & recommended plugins."
+#: includes/options-config.php:220
+msgid "Theme screenshot"
 msgstr ""
 
-#: includes/options-config.php:222
-msgid "<a href=\"%1$s\">Click here to install the demo</a>"
+#: includes/options-config.php:234
+msgid "Install required plugin to import the demo content."
 msgstr ""
 
-#: includes/options-config.php:251
+#: includes/options-config.php:234
+msgid "Begin Installing Plugin"
+msgstr ""
+
+#: includes/options-config.php:236
+msgid "Click here to install the demo"
+msgstr ""
+
+#: includes/options-config.php:238
+msgid "Kindly activate the Required plugin to Import the demo content."
+msgstr ""
+
+#: includes/options-config.php:238
+msgid "Begin Activating Plugin"
+msgstr ""
+
+#: includes/options-config.php:267
 msgid "Flex Slider"
 msgstr ""
 
-#: includes/options-config.php:256
+#: includes/options-config.php:272
 msgid "Support"
 msgstr ""
 
-#: includes/options-config.php:261
+#: includes/options-config.php:277
 msgid "Responsive Design"
 msgstr ""
 
-#: includes/options-config.php:266
+#: includes/options-config.php:282
 msgid "Custom Logo Option"
 msgstr ""
 
-#: includes/options-config.php:271
+#: includes/options-config.php:287
 msgid "Social Links"
 msgstr ""
 
-#: includes/options-config.php:276
+#: includes/options-config.php:292
 msgid "Unlimited color option"
 msgstr ""
 
-#: includes/options-config.php:281
+#: includes/options-config.php:297
 msgid "Elastic Slider"
 msgstr ""
 
-#: includes/options-config.php:286
+#: includes/options-config.php:302
 msgid "Page Builder Support"
 msgstr ""
 
-#: includes/options-config.php:291
+#: includes/options-config.php:307
 msgid "Page Templates"
 msgstr ""
 
-#: includes/options-config.php:301
+#: includes/options-config.php:317
 msgid "Demo Content"
 msgstr ""
 
-#: includes/options-config.php:306
+#: includes/options-config.php:322
 msgid "Polylang Compatible"
 msgstr ""
 
-#: includes/options-config.php:311
+#: includes/options-config.php:327
 msgid "Multiple Portfolio Layouts"
 msgstr ""
 
-#: includes/options-config.php:316
+#: includes/options-config.php:332
 msgid "Multiple Blog Layouts"
 msgstr ""
 
-#: includes/options-config.php:321
+#: includes/options-config.php:337
 msgid "Page Animation"
 msgstr ""
 
-#: includes/options-config.php:351, includes/options-config.php:352
+#: includes/options-config.php:367, includes/options-config.php:368
 msgid "Theme Options"
 msgstr ""
 
-#: includes/options-config.php:355
+#: includes/options-config.php:371
 msgid "General"
 msgstr ""
 
-#: includes/options-config.php:356
+#: includes/options-config.php:372
 msgid "General settings that affects overall site"
 msgstr ""
 
-#: includes/options-config.php:360
+#: includes/options-config.php:376
 msgid "Enable Breadcrumb"
 msgstr ""
 
-#: includes/options-config.php:366
+#: includes/options-config.php:382
 msgid "Select Breadcrumb Character"
 msgstr ""
 
-#: includes/options-config.php:377
+#: includes/options-config.php:393
 msgid "Enable Numeric Page Navigation"
 msgstr ""
 
-#: includes/options-config.php:378
+#: includes/options-config.php:394
 msgid "Check to display numeric page navigation, instead of Previous Posts / Next Posts links."
 msgstr ""
 
-#: includes/options-config.php:384
-msgid "Website Layout Options"
-msgstr ""
-
-#: includes/options-config.php:385
-msgid "Select main content and sidebar alignment."
-msgstr ""
-
-#: includes/options-config.php:387
-msgid "Sidebar Left"
-msgstr ""
-
-#: includes/options-config.php:388
-msgid "Sidebar Right"
-msgstr ""
-
-#: includes/options-config.php:389
-msgid "Full Width"
-msgstr ""
-
-#: includes/options-config.php:390
-msgid "No Sidebar"
-msgstr ""
-
-#: includes/options-config.php:398
+#: includes/options-config.php:401
 msgid "Header"
 msgstr ""
 
-#: includes/options-config.php:399
-msgid "Header options"
+#: includes/options-config.php:402
+msgid "Header Style related option"
 msgstr ""
 
-#: includes/options-config.php:403
-msgid "Logo as Title"
+#: includes/options-config.php:406
+msgid "Header Style Options"
+msgstr ""
+
+#: includes/options-config.php:407
+msgid "Select the header Style."
 msgstr ""
 
 #: includes/options-config.php:409
-msgid "Show site Tagline"
+msgid "Style 1"
 msgstr ""
 
-#: includes/options-config.php:416
+#: includes/options-config.php:410
+msgid "Style 2"
+msgstr ""
+
+#: includes/options-config.php:418
 msgid "Footer"
 msgstr ""
 
-#: includes/options-config.php:417
+#: includes/options-config.php:419
 msgid "Footer related options"
 msgstr ""
 
-#: includes/options-config.php:421
+#: includes/options-config.php:423
 msgid "Footer Widget Area"
 msgstr ""
 
-#: includes/options-config.php:427
+#: includes/options-config.php:429
 msgid "Footer Copyright Text (Validated that it's HTML Allowed)"
 msgstr ""
 
-#: includes/options-config.php:428
+#: includes/options-config.php:430
 msgid "HTML Allowed. <b>This field is even HTML validated! </b>"
 msgstr ""
 
-#: includes/options-config.php:434
+#: includes/options-config.php:436
 msgid "Blog"
 msgstr ""
 
-#: includes/options-config.php:435
+#: includes/options-config.php:437
 msgid "Blog Related Posts options"
 msgstr ""
 
-#: includes/options-config.php:439
+#: includes/options-config.php:441
 msgid "Enable Featured Image"
 msgstr ""
 
-#: includes/options-config.php:445
+#: includes/options-config.php:447
 msgid "Choose the featured image display type for Blog Page "
 msgstr ""
 
-#: includes/options-config.php:447, includes/options-config.php:463
+#: includes/options-config.php:449, includes/options-config.php:465
 msgid "Large Featured Image"
 msgstr ""
 
-#: includes/options-config.php:448, includes/options-config.php:464
+#: includes/options-config.php:450, includes/options-config.php:466
 msgid "Small Featured Image"
 msgstr ""
 
-#: includes/options-config.php:455
+#: includes/options-config.php:457
 msgid "Enable Single Post Featured Image"
 msgstr ""
 
-#: includes/options-config.php:461
+#: includes/options-config.php:463
 msgid "Choose the featured image display type for Single Page "
 msgstr ""
 
-#: includes/options-config.php:471
+#: includes/options-config.php:473
 msgid " Enable Author Bio Box below single post"
 msgstr ""
 
-#: includes/options-config.php:472
+#: includes/options-config.php:474
 msgid "Show Author information box below single post."
 msgstr ""
 
-#: includes/options-config.php:478
+#: includes/options-config.php:480
 msgid "Show Related posts"
 msgstr ""
 
-#: includes/options-config.php:479
+#: includes/options-config.php:481
 msgid "Show related posts."
 msgstr ""
 
-#: includes/options-config.php:485
+#: includes/options-config.php:487
 msgid "Related Posts Must Be Shown As:"
 msgstr ""
 
-#: includes/options-config.php:487
+#: includes/options-config.php:489
 msgid "Related Posts By Tags"
 msgstr ""
 
-#: includes/options-config.php:488
+#: includes/options-config.php:490
 msgid "Related Posts By Categories"
 msgstr ""
 
-#: includes/options-config.php:500
-msgid " Home Options"
+#: includes/options-config.php:498
+msgid "Layout"
 msgstr ""
 
-#: includes/options-config.php:501
-msgid " Select Front page display as a static front page in order to visible the following sections"
+#: includes/options-config.php:502
+msgid "Website Layout Options"
 msgstr ""
 
-#: includes/options-config.php:504
-msgid "Section: Slider"
+#: includes/options-config.php:503
+msgid "Select main content and sidebar alignment."
+msgstr ""
+
+#: includes/options-config.php:505
+msgid "Sidebar Left"
+msgstr ""
+
+#: includes/options-config.php:506
+msgid "Sidebar Right"
+msgstr ""
+
+#: includes/options-config.php:507
+msgid "Full Width"
 msgstr ""
 
 #: includes/options-config.php:508
-msgid "Enable Home Page Slider Section"
-msgstr ""
-
-#: includes/options-config.php:514
-msgid "Slider Posts Category"
+msgid "No Sidebar"
 msgstr ""
 
 #: includes/options-config.php:519
-msgid "No. of Sliders"
+msgid " Home Options"
 msgstr ""
 
-#: includes/options-config.php:526
-msgid "Section: Service"
+#: includes/options-config.php:520
+msgid " Select Front page display as a static front page in order to visible the following sections"
+msgstr ""
+
+#: includes/options-config.php:523
+msgid "Section: Slider"
 msgstr ""
 
 #: includes/options-config.php:527
+msgid "Enable Home Page Slider Section"
+msgstr ""
+
+#: includes/options-config.php:533
+msgid "Slider Posts Category"
+msgstr ""
+
+#: includes/options-config.php:538
+msgid "No. of Sliders"
+msgstr ""
+
+#: includes/options-config.php:545
+msgid "Section: Service"
+msgstr ""
+
+#: includes/options-config.php:546
 msgid " Select Front page display as a static front page in orde to visible this section, Service related options"
 msgstr ""
 
-#: includes/options-config.php:531, includes/options-config.php:588
+#: includes/options-config.php:550, includes/options-config.php:607
 msgid "Check this box to Show this section"
 msgstr ""
 
-#: includes/options-config.php:537
+#: includes/options-config.php:556
 msgid "Service Section Head"
 msgstr ""
 
-#: includes/options-config.php:542
+#: includes/options-config.php:561
 msgid "Choose Service Section Icons #1"
 msgstr ""
 
-#: includes/options-config.php:547
+#: includes/options-config.php:566
 msgid "Service Section #1"
 msgstr ""
 
-#: includes/options-config.php:552
+#: includes/options-config.php:571
 msgid "Choose Service Section Icons #2"
 msgstr ""
 
-#: includes/options-config.php:557
+#: includes/options-config.php:576
 msgid "Service Section #2"
 msgstr ""
 
-#: includes/options-config.php:562
+#: includes/options-config.php:581
 msgid "Choose Service Section Icons #3"
 msgstr ""
 
-#: includes/options-config.php:567
+#: includes/options-config.php:586
 msgid "Service Section #3"
 msgstr ""
 
-#: includes/options-config.php:572
+#: includes/options-config.php:591
 msgid "Choose Service Section Icons #4"
 msgstr ""
 
-#: includes/options-config.php:577
+#: includes/options-config.php:596
 msgid "Service Section #4"
 msgstr ""
 
-#: includes/options-config.php:584
+#: includes/options-config.php:603
 msgid "Section: About Us Section"
 msgstr ""
 
-#: includes/options-config.php:594, includes/options-config.php:623
+#: includes/options-config.php:613, includes/options-config.php:642
 msgid "Section Title & Description"
 msgstr ""
 
-#: includes/options-config.php:598
+#: includes/options-config.php:617
 msgid "AboutUs Form"
 msgstr ""
 
-#: includes/options-config.php:599
+#: includes/options-config.php:618
 msgid "Copy and paste the shortcode of the form from the contact form 7."
 msgstr ""
 
-#: includes/options-config.php:604
+#: includes/options-config.php:623
 msgid "Image content Section"
 msgstr ""
 
-#: includes/options-config.php:611
+#: includes/options-config.php:630
 msgid "Recent Blog"
 msgstr ""
 
-#: includes/options-config.php:612, includes/options-config.php:635
+#: includes/options-config.php:631, includes/options-config.php:660
 msgid "Default Page content related option"
 msgstr ""
 
-#: includes/options-config.php:616
+#: includes/options-config.php:635
 msgid "Enable Home Page Recent Post Section"
 msgstr ""
 
-#: includes/options-config.php:617
+#: includes/options-config.php:636
 msgid "Enable recent post section in home page"
 msgstr ""
 
-#: includes/options-config.php:627
+#: includes/options-config.php:646
 msgid "No. of Recent Posts"
 msgstr ""
 
-#: includes/options-config.php:634
+#: includes/options-config.php:652
+msgid "Exclude the Posts from Home Page.Post IDs, separated by commas"
+msgstr ""
+
+#: includes/options-config.php:653
+msgid "Post IDs, separated by commas."
+msgstr ""
+
+#: includes/options-config.php:659
 msgid "Page Content"
 msgstr ""
 
-#: includes/options-config.php:639
+#: includes/options-config.php:664
 msgid "Check this box to Show page content"
 msgstr ""
 
@@ -1220,88 +1272,88 @@ msgstr ""
 msgid "%1$s "
 msgstr ""
 
-#: includes/template-tags.php:178
+#: includes/template-tags.php:180
 msgid "Home"
 msgstr ""
 
-#: includes/template-tags.php:179
+#: includes/template-tags.php:181
 msgid "Archive by Category \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:180
+#: includes/template-tags.php:182
 msgid "Search Results for \"%s\" Query"
 msgstr ""
 
-#: includes/template-tags.php:181
+#: includes/template-tags.php:183
 msgid "Posts Tagged \"%s\""
 msgstr ""
 
-#: includes/template-tags.php:182
+#: includes/template-tags.php:184
 msgid "Articles Posted by %s"
 msgstr ""
 
-#: includes/template-tags.php:183
+#: includes/template-tags.php:185
 msgid "Error 404"
 msgstr ""
 
-#: includes/template-tags.php:236, includes/template-tags.php:236, includes/template-tags.php:237, includes/template-tags.php:241, includes/template-tags.php:241, includes/template-tags.php:245
+#: includes/template-tags.php:238, includes/template-tags.php:238, includes/template-tags.php:239, includes/template-tags.php:243, includes/template-tags.php:243, includes/template-tags.php:247
 msgid "Y"
 msgstr ""
 
-#: includes/template-tags.php:237
+#: includes/template-tags.php:239
 msgid "m"
 msgstr ""
 
-#: includes/template-tags.php:237, includes/template-tags.php:242
+#: includes/template-tags.php:239, includes/template-tags.php:244
 msgid "F"
 msgstr ""
 
-#: includes/template-tags.php:238
+#: includes/template-tags.php:240
 msgid "d"
 msgstr ""
 
-#: includes/template-tags.php:308
+#: includes/template-tags.php:310
 msgid "Page"
 msgstr ""
 
-#: includes/template-tags.php:323, includes/template-tags.php:334
+#: includes/template-tags.php:325, includes/template-tags.php:336
 msgctxt "post author"
 msgid " %s"
 msgstr ""
 
-#: includes/template-tags.php:354
+#: includes/template-tags.php:356
 msgid "No Comments"
 msgstr ""
 
-#: includes/template-tags.php:356
+#: includes/template-tags.php:358
 msgid " Comments"
 msgstr ""
 
-#: includes/template-tags.php:358
+#: includes/template-tags.php:360
 msgid "1 Comment"
 msgstr ""
 
-#: includes/template-tags.php:362
+#: includes/template-tags.php:364
 msgid "Leave a comment"
 msgstr ""
 
-#: includes/template-tags.php:371, template-parts/content-page.php:30
+#: includes/template-tags.php:373, template-parts/content-page.php:30
 msgid "Edit"
 msgstr ""
 
-#: includes/template-tags.php:418, includes/template-tags.php:421
+#: includes/template-tags.php:420, includes/template-tags.php:423
 msgid "No Related Posts Yet!"
 msgstr ""
 
-#: includes/template-tags.php:449
+#: includes/template-tags.php:451
 msgid "View Details"
 msgstr ""
 
-#: includes/template-tags.php:490
+#: includes/template-tags.php:492
 msgid "Welcome! Thank you for choosing %1$s! To fully take advantage of the best our theme can offer please make sure you visit our <a href=\"%2$s\">Welcome page</a>"
 msgstr ""
 
-#: includes/template-tags.php:491
+#: includes/template-tags.php:493
 msgid "Get started with Fetch"
 msgstr ""
 

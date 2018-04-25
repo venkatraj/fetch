@@ -5,9 +5,11 @@
  * @package Fetch
  */
 
- $breadcrumb = get_theme_mod( 'breadcrumb',true ); 
+$breadcrumb = get_theme_mod( 'breadcrumb',true ); 
+$header_style = get_theme_mod('header_style',true); 
+$header_type = ($header_style == 'style_two') ? 'header-style-2' : ''; 
 if( !is_front_page() ): ?>
-	<div class="breadcrumb"> 
+	<div class="breadcrumb <?php echo $header_type?>"> 
 		<div class="container"><?php
 		    if( !is_search() && !is_archive() && !is_404() ) : ?>
 				<div class="sixteen columns">

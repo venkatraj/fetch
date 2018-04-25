@@ -1,6 +1,3 @@
-
-
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -904,13 +901,15 @@ a {
 
 .comment-navigation .nav-previous,
 .paging-navigation .nav-previous,
-.post-navigation .nav-previous {
+.post-navigation .nav-previous,
+.posts-navigation .nav-previous {
   float: right;
   width: 48%; }
 
 .comment-navigation .nav-next,
 .paging-navigation .nav-next,
-.post-navigation .nav-next {
+.post-navigation .nav-next,
+.posts-navigation .nav-next {
   float: left;
   text-align: left;
   width: 47%; }
@@ -1312,6 +1311,9 @@ object {
     .breadcrumb #crumbs span {
       padding: 0px 5px; }
 
+.breadcrumb.header-style-2 {
+  background: linear-gradient(-360deg, #3c82f4 0%, #294073 67%, #212035 99%, #212034 100%);
+   }
 
 .top-nav {
   background: #f5f5f5;
@@ -2011,6 +2013,8 @@ blockquote, q {
     .post-wrapper .latest-posts .latest-post-details .latest-post-content {
       margin: 10px 0 30px;
       text-align: justify; }
+      .post-wrapper .latest-posts .latest-post-details .latest-post-content h1, .post-wrapper .latest-posts .latest-post-details .latest-post-content h2, .post-wrapper .latest-posts .latest-post-details .latest-post-content h3, .post-wrapper .latest-posts .latest-post-details .latest-post-content h4, .post-wrapper .latest-posts .latest-post-details .latest-post-content h5, .post-wrapper .latest-posts .latest-post-details .latest-post-content h6 {
+        line-height: normal; }
     .post-wrapper .latest-posts .latest-post-details .btn-readmore {
       display: inline-block;
       padding: 20px 20px 0px 0px;

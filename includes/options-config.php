@@ -181,6 +181,16 @@ function fetch_display_upgrade() {
         <?php if ( is_null( $tab ) ) { ?>
             <div class="theme_info info-tab-content">
                 <div class="theme_info_column clearfix">
+                	<div id="webulous-create-web">
+	                	<a href="https://www.webulousthemes.com/checkout?edd_action=add_to_cart&download_id=23052" target="_blank">
+							<div id="webulous-mode-wrap">
+								<?php echo sprintf ('<h3>%1$s</h3><p>%2$s</p>',__('New to Creating a Website?','fetch'),__('We will build you a complete website based on the theme you selected. We will populate content, change colors and do any look and feel customisation work you prefer.','fetch') ); ?>
+							</div>
+							<div class="image-wrap">
+								<?php echo sprintf ( '<img src="'. get_template_directory_uri() .'/images/api.png" alt="%1$s" />',__('Image','fetch') ); ?>
+							</div>
+						</a>
+					</div>
                     <div class="theme_info_left">
                         <div class="theme_link">
                             <h3><?php esc_html_e( 'Theme Customizer', 'fetch' ); ?></h3>
@@ -275,7 +285,7 @@ function fetch_display_upgrade() {
 		                    </tr>
 		                    <tr>
 		                         <td><h3><?php _e('Social Links', 'fetch'); ?></h3></td>
-		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
+		                         <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
 		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
@@ -378,27 +388,31 @@ function fetch_display_upgrade() {
 								'sanitize_callback' => 'fetch_breadcrumb_char_choices',
 								'default' => '1',
 							),
-							 'numeric_pagination' => array(
+							'numeric_pagination' => array(
                                 'type' => 'checkbox',
                                 'label' => __('Enable Numeric Page Navigation', 'fetch'),
                                 'description' => __('Check to display numeric page navigation, instead of Previous Posts / Next Posts links.', 'fetch'),
                                 'default' => 1, 
                                 'sanitize_callback' => 'fetch_boolean', 
                             ),
-                            'sidebar_position' => array(
-                                'type' => 'radio',
-                                'label' => __('Website Layout Options', 'fetch'),
-                                'description' => __('Select main content and sidebar alignment.', 'fetch'),
-                                'choices' => array(
-                                    'left' => __('Sidebar Left', 'fetch'),
-                                    'right' => __('Sidebar Right', 'fetch'),
-                                    'fullwidth' => __('Full Width', 'fetch'),
-                                    'no-sidebar' => __('No Sidebar', 'fetch'),
-                                ),
-                                'default' => 'right',  
-                                'sanitize_callback' => 'sanitize_text_field', 
-                            ),
 						),
+					),
+					'header' => array(
+						'title' => __('Header', 'fetch'),
+						'description' => __('Header Style related option', 'fetch'),
+						'fields' => array(
+							'header_style' => array(
+								'type' => 'radio',
+                                'label' => __('Header Style Options', 'fetch'),
+                                'description' => __('Select the header Style.', 'fetch'),
+                                'choices' => array(
+                                    'style_one' => __('Style 1', 'fetch'),
+                                    'style_two' => __('Style 2', 'fetch'),
+                                ),
+                                'default' => 'style_one',  
+                                'sanitize_callback' => 'sanitize_text_field', 
+							),
+						), 
 					),
 					'footer' => array(
 						'title' => __('Footer', 'fetch'),
@@ -480,7 +494,24 @@ function fetch_display_upgrade() {
                             ),
 						),
 					),
-
+					'layout' => array(
+						'title' => __('Layout', 'fetch'),
+						'fields' => array(
+                            'sidebar_position' => array(
+                                'type' => 'radio',
+                                'label' => __('Website Layout Options', 'fetch'),
+                                'description' => __('Select main content and sidebar alignment.', 'fetch'),
+                                'choices' => array(
+                                    'left' => __('Sidebar Left', 'fetch'),
+                                    'right' => __('Sidebar Right', 'fetch'),
+                                    'fullwidth' => __('Full Width', 'fetch'),
+                                    'no-sidebar' => __('No Sidebar', 'fetch'),
+                                ),
+                                'default' => 'right',  
+                                'sanitize_callback' => 'sanitize_text_field', 
+                            ),
+						),
+					),
 				)
 			),
 			'home-fetch' => array( 
@@ -616,6 +647,12 @@ function fetch_display_upgrade() {
 								'sanitize_callback' => 'absint',
 								'default' => 3,  
 							),
+							'recent_posts_exclude' => array(
+								'type' => 'text',
+								'label' => __('Exclude the Posts from Home Page.Post IDs, separated by commas', 'fetch'),
+								'description' => __('Post IDs, separated by commas.','fetch'),
+								'sanitize_callback' => 'sanitize_text_field', 
+							), 
 						),
 				    ),
 				    'page-content-section' => array(

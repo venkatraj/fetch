@@ -617,7 +617,7 @@ You haven't created any slider yet. Create a post, set your slider image as Post
 		<link>http://localhost/free/demo/fetch/construction-image/aboutus-img/</link>
 		<pubDate>Mon, 18 Dec 2017 12:00:46 +0000</pubDate>
 		<dc:creator><![CDATA[venkat]]></dc:creator>
-		<guid isPermaLink="false">http://localhost/free/demo/fetch/wp-content/uploads/2017/12/aboutus-img.png</guid>
+		<guid isPermaLink="false">http://dummy.genexthemes.com/free-demo-images/aboutus-img.png</guid>
 		<description></description>
 		<content:encoded><![CDATA[]]></content:encoded>
 		<excerpt:encoded><![CDATA[]]></excerpt:encoded>
@@ -633,7 +633,7 @@ You haven't created any slider yet. Create a post, set your slider image as Post
 		<wp:post_type><![CDATA[attachment]]></wp:post_type>
 		<wp:post_password><![CDATA[]]></wp:post_password>
 		<wp:is_sticky>0</wp:is_sticky>
-		<wp:attachment_url><![CDATA[http://localhost/free/demo/fetch/wp-content/uploads/2017/12/aboutus-img.png]]></wp:attachment_url>
+		<wp:attachment_url><![CDATA[http://dummy.genexthemes.com/free-demo-images/aboutus-img.png]]></wp:attachment_url>
 		<wp:postmeta>
 			<wp:meta_key><![CDATA[_wp_attached_file]]></wp:meta_key>
 			<wp:meta_value><![CDATA[2017/12/aboutus-img.png]]></wp:meta_value>
