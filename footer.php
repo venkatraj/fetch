@@ -28,7 +28,7 @@
 						<?php else : 
 								printf( __('<p>Powered by <a href="%1$s" target="_blank">WordPress</a>', 'fetch'), esc_url( 'http://wordpress.org/') );
 								printf( '<span class="sep"> .</span>' );
-								printf( __( 'Theme: Fetch by <a href="%1$s" target="_blank" rel="designer">Webulous Themes</a></p>', 'fetch' ), esc_url('http://www.webulousthemes.com/') );
+								printf( __( 'Theme: Fetch by <a href="%1$s" target="_blank" rel="designer">Webulous Themes</a></p>', 'fetch' ), esc_url('https://www.webulousthemes.com/') );
 					 endif;  ?>
 				</div>
 			</div>

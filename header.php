@@ -30,7 +30,7 @@ if ( is_singular() && pings_open() ) { ?>
 						<div class="ten columns">
 							<div class="cart-left">
 								<?php dynamic_sidebar('top-left' ); ?>
-							</div>
+							</div> 
 						</div>
 		
 						<div class="six columns">

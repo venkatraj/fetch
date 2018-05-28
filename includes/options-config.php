@@ -452,48 +452,89 @@ function fetch_display_upgrade() {
                                 'default' => '1', 
                                 'sanitize_callback' => 'absint',
                             ),
+						),
+					),
+					'single_blog' => array(
+						'title' => __('Single Blog', 'fetch'),
+						'description' => __('Single Blog page Related Posts options', 'fetch'),
+						'fields' => array(
 							'single_featured_image' => array(
 								'type' => 'checkbox',
 								'label' => __('Enable Single Post Featured Image', 'fetch'),
 								'default' => 1,
 								'sanitize_callback' => 'fetch_boolean',
 							),
-                            'single_featured_image_size' => array(
-                                'type' => 'radio',
-                                'label' => __('Choose the featured image display type for Single Page ', 'fetch'),
-                                'choices' => array(
-                                    '1' => __('Large Featured Image', 'fetch'),
-                                    '2' => __('Small Featured Image', 'fetch'),       
-                                ),
-                                'default' => '1', 
-                                'sanitize_callback' => 'absint',  
-                            ),
-                             'author_bio_box' => array(
-                                'type' => 'checkbox',
-                                'label' => __(' Enable Author Bio Box below single post', 'fetch'),
-                                'description' => __('Show Author information box below single post.', 'fetch'),
-                                'default' => 0,
-                                'sanitize_callback' => 'fetch_boolean',    
-                            ),
-                            'related_posts' => array(
-                                'type' => 'checkbox',
-                                'label' => __('Show Related posts', 'fetch'),
-                                'description' => __('Show related posts.', 'fetch'),
-                                'default' => 0, 
-                                'sanitize_callback' => 'fetch_boolean', 
-                            ),
-                            'related_posts_hierarchy' => array(
-                                'type' => 'radio',
-                                'label' => __('Related Posts Must Be Shown As:', 'fetch'),
-                                'choices' => array(
-                                    '1' => __('Related Posts By Tags', 'fetch'),
-                                    '2' => __('Related Posts By Categories', 'fetch'),      
-                                ),
-                               'default' => '1', 
-                               'sanitize_callback' => 'absint',    
-                            ),
+							'single_featured_image_size' => array(
+								'type' => 'radio',
+								'label' => __('Choose the featured image display type for Single Page ', 'fetch'),
+								'choices' => array(
+									'1' => __('Large Featured Image', 'fetch'),
+									'2' => __('Small Featured Image', 'fetch'),       
+								),
+								'default' => '1', 
+								'sanitize_callback' => 'absint',  
+							),
+							'social_sharing_box' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Social Sharing Box below single post', 'fetch'),
+								'default' => 0,
+								'sanitize_callback' => 'fetch_boolean',    
+							),
+							'facebook_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Facebook Sharing option below single post', 'fetch'),
+								'default' => 0,
+								'sanitize_callback' => 'fetch_boolean',    
+							),
+							'twitter_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Twitter Sharing option below single post', 'fetch'),
+								'default' => 0,
+								'sanitize_callback' => 'fetch_boolean',    
+							),
+							'linkedin_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Linkedin Sharing option below single post', 'fetch'),
+								'default' => 0,
+								'sanitize_callback' => 'fetch_boolean',    
+							),
+							'google-plus_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Google Plus Sharing option below single post', 'fetch'),
+								'default' => 0,
+								'sanitize_callback' => 'fetch_boolean',    
+							),
+							'email_sb' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Email Sharing option below single post', 'fetch'),
+								'default' => 0,
+								'sanitize_callback' => 'fetch_boolean',    
+							),
+							'author_bio_box' => array(
+								'type' => 'checkbox',
+								'label' => __(' Enable Author Bio Box below single post', 'fetch'),
+								'default' => 0,
+								'sanitize_callback' => 'fetch_boolean',    
+							),
+							'related_posts' => array(
+								'type' => 'checkbox',
+								'label' => __('Show Related posts', 'fetch'),
+								'default' => 0, 
+								'sanitize_callback' => 'fetch_boolean', 
+							),
+							'related_posts_hierarchy' => array(
+								'type' => 'radio',
+								'label' => __('Related Posts Must Be Shown As:', 'fetch'),
+								'choices' => array(
+									'1' => __('Related Posts By Tags', 'fetch'),
+									'2' => __('Related Posts By Categories', 'fetch'),      
+								),
+								'default' => '1', 
+								'sanitize_callback' => 'absint',    
+							),
 						),
 					),
+
 					'layout' => array(
 						'title' => __('Layout', 'fetch'),
 						'fields' => array(

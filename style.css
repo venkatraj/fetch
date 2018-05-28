@@ -2,9 +2,9 @@
 Theme Name: Fetch
 Theme URI: http://www.webulousthemes.com/fetch/
 Author: N. Venkat Raj  
-Author URI: http://www.webulousthemes.com/
+Author URI: https://www.webulousthemes.com/
 Description: Fetch is a WordPress business theme. It is focused on building websites in the Transport, Transportation, Logistic company niches. It can be used for any kind of Transport or manufacturing type business. However, due to its flexibility and easiness it can be used to create any types of sites.  It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility.
-Version: 1.0.4
+Version: 1.0.5
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: fetch
@@ -1505,13 +1505,13 @@ object {
     margin: 0 8px 0px 0px;
     display: inline-block; }
     .share-box ul li a {
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
       color: #191b30;
       display: inline-block;
       background-color: #191b30;
       text-align: center;
-      line-height: 30px;
+      line-height: 35px;
       -webkit-transform: rotate(45deg);
               transform: rotate(45deg);
       color: #fff; }
@@ -1522,8 +1522,7 @@ object {
         -webkit-transform: rotate(-45deg);
                 transform: rotate(-45deg);
         font-size: 14px;
-        font-size: 1.4rem;
-        line-height: 2; }
+        font-size: 1.4rem; }
 
 .share-box {
   margin-bottom: 50px; }

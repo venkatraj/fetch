@@ -1,3 +1,6 @@
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -1426,13 +1429,13 @@ object {
     margin: 0 0px 0px 8px;
     display: inline-block; }
     .share-box ul li a {
-      width: 30px;
-      height: 30px;
+      width: 35px;
+      height: 35px;
       color: #191b30;
       display: inline-block;
       background-color: #191b30;
       text-align: center;
-      line-height: 30px;
+      line-height: 35px;
       -webkit-transform: rotate(-45deg);
               transform: rotate(-45deg);
       color: #fff; }
@@ -1443,8 +1446,7 @@ object {
         -webkit-transform: rotate(45deg);
                 transform: rotate(45deg);
         font-size: 14px;
-        font-size: 1.4rem;
-        line-height: 2; }
+        font-size: 1.4rem; }
 
 .share-box {
   margin-bottom: 50px; }
