@@ -5,8 +5,7 @@
  * @package Fetch
  */
 
-get_header(); 
-get_template_part( 'template-parts/breadcrumb' ); ?>
+get_header();  ?>
 			
 <div id="content" class="site-content">
 		<div class="container">

@@ -285,7 +285,7 @@ function fetch_display_upgrade() {
 		                    </tr>
 		                    <tr>
 		                         <td><h3><?php _e('Social Links', 'fetch'); ?></h3></td>
-		                         <td class="only-pro"><span class="dashicons-before dashicons-no-alt"></span></td>
+		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                         <td class="only-lite"><span class="dashicons-before dashicons-yes"></span></td>
 		                    </tr>
 		                    <tr>
@@ -422,6 +422,12 @@ function fetch_display_upgrade() {
 								'type' => 'checkbox',
 								'label' => __('Footer Widget Area', 'fetch'),
 								'default' => 1,
+								'sanitize_callback' => 'fetch_boolean',
+							),
+							'scroll_to_top' => array(
+								'type' => 'checkbox',
+								'label' => __('Enable Scroll To Top', 'fetch'),
+								'default' => 0,
 								'sanitize_callback' => 'fetch_boolean',
 							),
 							'copyright' => array(
@@ -736,19 +742,19 @@ if ( ! function_exists( 'fetch_footer_copyright' ) ) {
 
     function fetch_footer_copyright($string) {
         $allowed_tags = array(    
-                            'a' => array(
-                            	'href' => array(),
-								'title' => array(),
-								'target' => array(),
-                            ),
-							'img' => array(
-								'src' => array(),  
-								'alt' => array(),
-							),
-							'p' => array(),
-							'br' => array(),
-							'em' => array(),
-                            'strong' => array(),
+			'a' => array(
+				'href' => array(),
+				'title' => array(),
+				'target' => array(),
+			),
+			'img' => array(
+				'src' => array(),  
+				'alt' => array(),
+			),
+			'p' => array(),
+			'br' => array(),
+			'em' => array(),
+			'strong' => array(),
         );
         return wp_kses( $string,$allowed_tags);
 

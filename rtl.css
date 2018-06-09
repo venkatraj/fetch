@@ -2976,6 +2976,8 @@ blockquote, q {
         padding-left: 5px; }
       .site-footer .footer-widgets ul li:hover {
         background-position: 10px 12px; }
+      .site-footer .footer-widgets ul li ul li {
+        padding: 5px 15px 5px 5px; }
     .site-footer .footer-widgets ul.children,
     .site-footer .footer-widgets .widget_nav_menu ul.sub-menu {
       border-color: rgba(255, 255, 255, 0.2); }
@@ -3022,9 +3024,26 @@ blockquote, q {
     .site-footer .footer-widgets .widget_tag_cloud a:hover {
       color: #fff; }
     .site-footer .footer-widgets .widget_tag_cloud a {
-      color: #191b30; }
+      color: #fff; }
     .site-footer .footer-widgets .widget_rss ul li {
       background: none; }
+  .site-footer .scroll-to-top {
+    background: #3c82f4;
+    color: #fff;
+    bottom: 10%;
+    cursor: pointer;
+    position: fixed;
+    left: 20px;
+    z-index: 999;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    background-clip: padding-box;
+    
+    border-radius: 4px;
+    transition: background-color 0.3s linear; }
+  .site-footer .scroll-to-top:hover {
+    background: rgba(60, 130, 244, 0.8); }
 
 .site-info {
   background: #3c82f4; }

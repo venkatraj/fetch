@@ -4,7 +4,7 @@ Theme URI: http://www.webulousthemes.com/fetch/
 Author: N. Venkat Raj  
 Author URI: https://www.webulousthemes.com/
 Description: Fetch is a WordPress business theme. It is focused on building websites in the Transport, Transportation, Logistic company niches. It can be used for any kind of Transport or manufacturing type business. However, due to its flexibility and easiness it can be used to create any types of sites.  It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility.
-Version: 1.0.5
+Version: 1.0.6
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: fetch
@@ -3056,6 +3056,8 @@ blockquote, q {
         padding-right: 5px; }
       .site-footer .footer-widgets ul li:hover {
         background-position: 10px 12px; }
+      .site-footer .footer-widgets ul li ul li {
+        padding: 5px 5px 5px 15px; }
     .site-footer .footer-widgets ul.children,
     .site-footer .footer-widgets .widget_nav_menu ul.sub-menu {
       border-color: rgba(255, 255, 255, 0.2); }
@@ -3102,9 +3104,26 @@ blockquote, q {
     .site-footer .footer-widgets .widget_tag_cloud a:hover {
       color: #fff; }
     .site-footer .footer-widgets .widget_tag_cloud a {
-      color: #191b30; }
+      color: #fff; }
     .site-footer .footer-widgets .widget_rss ul li {
       background: none; }
+  .site-footer .scroll-to-top {
+    background: #3c82f4;
+    color: #fff;
+    bottom: 10%;
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    z-index: 999;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    background-clip: padding-box;
+    /* stops bg color from leaking outside the border: */
+    border-radius: 4px;
+    transition: background-color 0.3s linear; }
+  .site-footer .scroll-to-top:hover {
+    background: rgba(60, 130, 244, 0.8); }
 
 .site-info {
   background: #3c82f4; }
