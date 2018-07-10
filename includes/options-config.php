@@ -659,9 +659,15 @@ function fetch_display_upgrade() {
 								'type' => 'dropdown-pages',
 								'label' => __('Section Title & Description', 'fetch'),
 							),
+							'aboutus_section_form_title' => array(
+								'type' => 'text',
+								'label' => __('Contact Us Form Title', 'fetch'),
+								'default' => 'Quick Quote',
+								'sanitize_callback' => 'sanitize_text_field', 
+							),
 							'aboutus_section_form' => array(
 								'type' => 'text',
-								'label' => __('AboutUs Form', 'fetch'),
+								'label' => __('Contact Us Form', 'fetch'),
 								'description' => __( 'Copy and paste the shortcode of the form from the contact form 7.', 'fetch' ),
                                 'sanitize_callback' => 'wp_kses_post',  
 							),

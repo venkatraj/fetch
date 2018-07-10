@@ -3,7 +3,7 @@ Contributors: Webulous
 Tags: blog, news, custom-menu, custom-background, custom-header, custom-logo, featured-images, right-sidebar, sticky-post, threaded-comments, translation-ready, two-columns, one-column, footer-widgets, full-width-template, theme-options, rtl-language-support
 Requires at least: 4.3
 Tested up to: 4.9.6
-Stable tag: 1.0.6
+Stable tag: 1.0.7
 License: GPLv3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
  
@@ -46,6 +46,9 @@ Enable/Disable featured images visibility.
 
 == Changelog ==
 
+= 1.0.7 = 
+* WPForms Lite plugin recommended. 
+
 = 1.0.6 =
  * Scroll to Top option added.
 
@@ -61,8 +64,8 @@ Enable/Disable featured images visibility.
 
 == Upgrade Notice ==
 
-= 1.0.6 =
- * Scroll to Top option added.
+= 1.0.7 = 
+* WPForms Lite plugin recommended. 
 
 Fetch WordPress Theme bundles the following third-party resources:
 == Resources ==

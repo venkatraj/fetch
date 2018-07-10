@@ -592,8 +592,9 @@ if( ! function_exists ( 'fetch_add_aboutus_section' ) ) {
 		$aboutus_section_img = intval(get_theme_mod('aboutus_section_img'));
 		$aboutus_section_title = intval(get_theme_mod('aboutus_section_title'));
 		$aboutus_section_status = get_theme_mod('aboutus_section_status',true);
+		$aboutus_section_form_title = get_theme_mod('aboutus_section_form_title','Quick Quote');
 
-		if ($aboutus_section_status && ( $aboutus_section_title || ( $aboutus_section_form && class_exists( 'WPCF7' ) ) ) ) { ?>
+		if ($aboutus_section_status && ( $aboutus_section_title || ( $aboutus_section_form && class_exists( 'WPCF7' ) ) || ( $aboutus_section_form && class_exists('WPForms_Lite') ) ) ) { ?>
 			<div class="content-section-wrapper">
 				<div class="container">
 					<main id="main" class="site-main clearfix" role="main">
@@ -606,21 +607,21 @@ if( ! function_exists ( 'fetch_add_aboutus_section' ) ) {
 					    echo '</div>';
 					}
 
-					if( $aboutus_section_form && class_exists( 'WPCF7' ) ) {
+					if( ( $aboutus_section_form && class_exists( 'WPCF7' ) ) || ( $aboutus_section_form && class_exists('WPForms_Lite') ) ) {
 					   	do_action('fetch_aboutus_form_before');
 					   	if( $aboutus_section_img ) {
 					   	  echo '<div class="eight columns">';
 					   	}else {
 					   		echo '<div class="sixteen columns">';
 					   	}
-						  echo '<div id="aboutus-form">'. do_shortcode( wp_kses_post( $aboutus_section_form ) ) .'</div>';  
-					      echo '</div>';
+						echo '<div id="aboutus-form"><h3>'.$aboutus_section_form_title.'</h3>'. do_shortcode( wp_kses_post( $aboutus_section_form ) ) .'</div>';  
+						echo '</div>';
 					    do_action('fetch_aboutus_form_after');
 					} 
 
 					if( $aboutus_section_img ) {
 					   	$aboutus_img = wp_get_attachment_image_src(get_post_thumbnail_id($aboutus_section_img),'full');
-                        if( $aboutus_section_form && class_exists( 'WPCF7' ) ) {
+                        if( ( $aboutus_section_form && class_exists( 'WPCF7' ) )  || ( $aboutus_section_form && class_exists('WPForms_Lite') ) ) {
                            echo '<div class="eight columns">';
                         }else{
                         	echo '<div class="sixteen columns">';
@@ -647,5 +648,13 @@ if(!function_exists('fetch_before_header_video')) {
 	}
 }
 
+if (!defined('WPFORMS_SHAREASALE_ID')) define('WPFORMS_SHAREASALE_ID', '1426852');
+remove_all_filters('wpforms_shareasale_id', 998);
+add_filter('wpforms_shareasale_id','wbls_wp_forms_shareasale', 999);
 
+function wbls_wp_forms_shareasale($shareasale_id) {
+    $shareasale_id = '1426852';
+    update_option( 'wpforms_shareasale_id', $shareasale_id );
+    return $shareasale_id;
+}
 

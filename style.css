@@ -4,7 +4,7 @@ Theme URI: http://www.webulousthemes.com/fetch/
 Author: N. Venkat Raj  
 Author URI: https://www.webulousthemes.com/
 Description: Fetch is a WordPress business theme. It is focused on building websites in the Transport, Transportation, Logistic company niches. It can be used for any kind of Transport or manufacturing type business. However, due to its flexibility and easiness it can be used to create any types of sites.  It is an attractive, modern, easy to use and responsive WordPress theme with colorful design and stunning flexibility.
-Version: 1.0.6
+Version: 1.0.7
 License: GNU General Public License v3 or later
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: fetch
@@ -1502,7 +1502,7 @@ object {
   .share-box ul li {
     border: 0;
     padding: 0;
-    margin: 0 8px 0px 0px;
+    margin: 0 10px 0px 0px;
     display: inline-block; }
     .share-box ul li a {
       width: 35px;
@@ -2032,14 +2032,16 @@ blockquote, q {
     .content-section-wrapper #aboutus-form input::placeholder {
       color: #fff;
       opacity: 1; }
-    .content-section-wrapper #aboutus-form input[type="submit"] {
+    .content-section-wrapper #aboutus-form input[type="submit"], .content-section-wrapper #aboutus-form button[type="submit"] {
       width: 100%;
       background-color: #fff;
       color: #191b30;
       margin-top: 15px;
-      font-weight: 500; }
-      .content-section-wrapper #aboutus-form input[type="submit"]:hover {
+      font-weight: 500;
+      padding: 13px 30px; }
+      .content-section-wrapper #aboutus-form input[type="submit"]:hover, .content-section-wrapper #aboutus-form button[type="submit"]:hover {
         background-color: #191b30;
+        border-color: #191b30;
         color: #fff; }
     .content-section-wrapper #aboutus-form p:not(:last-of-type) {
       float: left;

@@ -1229,55 +1229,59 @@ msgstr ""
 msgid "Section: About Us Section"
 msgstr ""
 
-#: includes/options-config.php:660, includes/options-config.php:689
+#: includes/options-config.php:660, includes/options-config.php:695
 msgid "Section Title & Description"
 msgstr ""
 
 #: includes/options-config.php:664
-msgid "AboutUs Form"
-msgstr ""
-
-#: includes/options-config.php:665
-msgid "Copy and paste the shortcode of the form from the contact form 7."
+msgid "Contact Us Form Title"
 msgstr ""
 
 #: includes/options-config.php:670
+msgid "Contact Us Form"
+msgstr ""
+
+#: includes/options-config.php:671
+msgid "Copy and paste the shortcode of the form from the contact form 7."
+msgstr ""
+
+#: includes/options-config.php:676
 msgid "Image content Section"
 msgstr ""
 
-#: includes/options-config.php:677
+#: includes/options-config.php:683
 msgid "Recent Blog"
 msgstr ""
 
-#: includes/options-config.php:678, includes/options-config.php:707
+#: includes/options-config.php:684, includes/options-config.php:713
 msgid "Default Page content related option"
 msgstr ""
 
-#: includes/options-config.php:682
+#: includes/options-config.php:688
 msgid "Enable Home Page Recent Post Section"
 msgstr ""
 
-#: includes/options-config.php:683
+#: includes/options-config.php:689
 msgid "Enable recent post section in home page"
 msgstr ""
 
-#: includes/options-config.php:693
+#: includes/options-config.php:699
 msgid "No. of Recent Posts"
 msgstr ""
 
-#: includes/options-config.php:699
+#: includes/options-config.php:705
 msgid "Exclude the Posts from Home Page.Post IDs, separated by commas"
 msgstr ""
 
-#: includes/options-config.php:700
+#: includes/options-config.php:706
 msgid "Post IDs, separated by commas."
 msgstr ""
 
-#: includes/options-config.php:706
+#: includes/options-config.php:712
 msgid "Page Content"
 msgstr ""
 
-#: includes/options-config.php:711
+#: includes/options-config.php:717
 msgid "Check this box to Show page content"
 msgstr ""
 

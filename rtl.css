@@ -1956,14 +1956,16 @@ blockquote, q {
     .content-section-wrapper #aboutus-form input::placeholder {
       color: #fff;
       opacity: 1; }
-    .content-section-wrapper #aboutus-form input[type="submit"] {
+    .content-section-wrapper #aboutus-form input[type="submit"], .content-section-wrapper #aboutus-form button[type="submit"] {
       width: 100%;
       background-color: #fff;
       color: #191b30;
       margin-top: 15px;
-      font-weight: 500; }
-      .content-section-wrapper #aboutus-form input[type="submit"]:hover {
+      font-weight: 500;
+      padding: 13px 30px; }
+      .content-section-wrapper #aboutus-form input[type="submit"]:hover, .content-section-wrapper #aboutus-form button[type="submit"]:hover {
         background-color: #191b30;
+        border-color: #191b30;
         color: #fff; }
     .content-section-wrapper #aboutus-form p:not(:last-of-type) {
       float: right;

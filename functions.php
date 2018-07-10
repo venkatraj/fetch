@@ -489,16 +489,15 @@ if( !function_exists('fetch_register_plugins') ) {
 		 * If the source is NOT from the .org repo, then source is also required.
 		 */
 		$plugins = array(
-
-			array(
-				'name'     => 'Contact Form 7', // The plugin name.
-				'slug'     => 'contact-form-7', // The plugin slug (typically the folder name).
-				'required' => false, // If false, the plugin is only 'recommended' instead of required.
-			),
 			array(
 				'name'     => 'One Click Demo Import', // The plugin name.
 				'slug'     => 'one-click-demo-import', // The plugin slug (typically the folder name).
 				'required' => false, // If false, the plugin is only 'recommended' instead of required.
+			),
+			array(
+				'name'               => 'WPForms Lite', // The plugin name.
+				'slug'               => 'wpforms-lite', // The plugin slug (typically the folder name).
+				'required'           => false, // If false, the plugin is only 'recommended' instead of required.
 			),
 		);
 		/*

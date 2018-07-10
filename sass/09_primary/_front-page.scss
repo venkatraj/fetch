@@ -133,14 +133,16 @@
         color: $white;
         opacity:1;
       }  
-      input[type="submit"] {
+      input[type="submit"], button[type="submit"] {
          width: 100%;
          background-color: $white;
          color: $secondary;
          margin-top: 15px;  
          font-weight: 500;
+         padding: 13px 30px;
          &:hover {
           background-color: $secondary;
+          border-color: $secondary;
           color: $white;
          }
       }
