@@ -26,9 +26,7 @@
 				<?php if( get_theme_mod('copyright') ) : ?>
 							<p><?php echo fetch_footer_copyright(get_theme_mod('copyright')); ?></p>
 						<?php else : 
-								printf( __('<p>Powered by <a href="%1$s" target="_blank">WordPress</a>', 'fetch'), esc_url( 'http://wordpress.org/') );
-								printf( '<span class="sep"> .</span>' );
-								printf( __( 'Theme: Fetch by <a href="%1$s" target="_blank" rel="designer">Webulous Themes</a></p>', 'fetch' ), esc_url('https://www.webulousthemes.com/') );
+								echo sprintf( '<p> %1$s <a href="%2$s" target="_blank"> %3$s</a> %4$s <a href="%5$s" target="_blank" rel="designer">%6$s</a></p>', __('Powered by','fetch'), esc_url( 'http://wordpress.org/'), __('WordPress.','fetch'), __('Theme: Fetch by','fetch'), esc_url('https://www.webulousthemes.com/'), __('Webulous Themes','fetch')) ;
 					 endif;  ?>
 				</div>
 			</div>

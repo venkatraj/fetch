@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: 404.php:17
-msgid "Oops! That page can&rsquo;t be found."
+msgid "Oops! That page can't be found."
 msgstr ""
 
 #: 404.php:21
@@ -77,11 +77,19 @@ msgid "Website"
 msgstr ""
 
 #: footer.php:29
-msgid "<p>Powered by <a href=\"%1$s\" target=\"_blank\">WordPress</a>"
+msgid "Powered by"
 msgstr ""
 
-#: footer.php:31
-msgid "Theme: Fetch by <a href=\"%1$s\" target=\"_blank\" rel=\"designer\">Webulous Themes</a></p>"
+#: footer.php:29
+msgid "WordPress."
+msgstr ""
+
+#: footer.php:29
+msgid "Theme: Fetch by"
+msgstr ""
+
+#: footer.php:29
+msgid "Webulous Themes"
 msgstr ""
 
 #: front-page.php:39, template-parts/content-search.php:42, template-parts/content-single.php:40, template-parts/content.php:41
@@ -247,7 +255,7 @@ msgid "Skip to content"
 msgstr ""
 
 #: search.php:24
-msgid "Search Results for: %s"
+msgid "Search Results For"
 msgstr ""
 
 #: single.php:31
@@ -1398,7 +1406,11 @@ msgid "Nothing Found"
 msgstr ""
 
 #: template-parts/content-none.php:20
-msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgid "Ready to publish your first post?"
+msgstr ""
+
+#: template-parts/content-none.php:20
+msgid "Get Started Here"
 msgstr ""
 
 #: template-parts/content-none.php:24
@@ -1406,7 +1418,7 @@ msgid "Sorry, but nothing matched your search terms. Please try again with some 
 msgstr ""
 
 #: template-parts/content-none.php:29
-msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgid "It seems we can't find what you're looking for. Perhaps searching can help."
 msgstr ""
 
 #: template-parts/content-page.php:20
